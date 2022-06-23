@@ -4,13 +4,26 @@ function obtenerMayor(x, y) {
   // "x" e "y" son números enteros (int).
   // Devuelve el número más grande
   // Si son iguales, devuelve cualquiera de los dos
-  // Tu código:
+  // Tu código: #35
+  if (x > y){
+    return x;
+  }else if (y > x){
+    return y;
+  }else if (x === y) {
+    return randon(x,y);
+  }
 }
 
 function mayoriaDeEdad(edad) {
   //Determinar si la persona según su edad puede ingresar a un evento.
   //Si tiene 18 años ó más, devolver --> "Allowed"
-  //Si es menor, devolver --> "Not allowed"
+  //Si es menor, devolver --> "Not allowed" #36
+  if (edad >= 18){
+    return "Allowed";
+  }
+  else{
+    return "Not allowed";
+  }
 }
   
 function conection(status) {
@@ -18,7 +31,16 @@ function conection(status) {
   //Cuando el estado es igual a 1, el usuario está "Online"
   //Cuando el estado es igual a 2, el usuario está "Away"
   //De lo contrario, presumimos que el usuario está "Offline"
-  //Devolver el estado de conexión de usuario en cada uno de los casos.
+  //Devolver el estado de conexión de usuario en cada uno de los casos. #37
+if(status === 1){
+  return "Online";
+}
+else if(status === 2){
+  return "Away";
+}
+else {
+  return "Offline";
+}
 }
 
 function saludo(idioma) {
@@ -26,8 +48,17 @@ function saludo(idioma) {
   // Si "idioma" es "aleman", devuelve "Guten Tag!"
   // Si "idioma" es "mandarin", devuelve "Ni Hao!"
   // Si "idioma" es "ingles", devuelve "Hello!"
-  // Si "idioma" no es ninguno de los anteiores o es `undefined` devuelve "Hola!"
+  // Si "idioma" no es ninguno de los anteiores o es `undefined` devuelve "Hola!" #40
   // Tu código:
+  if(idioma === "aleman"){
+    return "Guten Tag!";
+  }else if (idioma === "manderin"){
+    return "Ni Hao!";
+  }else if (idioma === "ingles"){
+    return "Hello!";
+  }else {
+    return "Hola!";
+  }
 }
 
 function colors(color) {
@@ -37,19 +68,39 @@ function colors(color) {
   //En caso que el color recibido sea "green", devuleve --> "This is green"
   //En caso que el color recibido sea "orange", devuleve --> "This is orange"
   //Caso default: devuelve --> "Color not found"
-  //Usar el statement Switch.
+  //Usar el statement Switch. #41
+  switch (color){
+  case "blue":
+    return"This is blue";
+  case "red":
+    return"This is red";
+  case "green":
+    return"This is green";
+  case "orange":
+    return"This is orange";
+  default:
+    return"Color not found";
+}
 }
 
 function esDiezOCinco(numero) {
   // Devuelve "true" si "numero" es 10 o 5
   // De lo contrario, devuelve "false"
-  // Tu código:
+  // Tu código: #42
+  if(numero === 10 || numero === 5){
+    return true
+  }
 }
 
 function estaEnRango(numero) {
   // Devuelve "true" si "numero" es menor que 50 y mayor que 20
   // De lo contrario, devuelve "false"
-  // Tu código:
+  // Tu código: #43
+  if(numero < 50 && numero > 20){
+    return true;
+  }else{
+    return false;
+  }
 }
 
 function esEntero(numero) {

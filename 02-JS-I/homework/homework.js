@@ -62,10 +62,10 @@ function sonIguales(x, y) {
   // De lo contrario, devuelve "false"
   // Tu código:
  if (x==y){
-  return true
+  return true;
  }
  else{
-  return false
+  return false;
  }
 }
 
@@ -74,10 +74,10 @@ function tienenMismaLongitud(str1, str2) {
   // De lo contrario, devuelve "false"
   // Tu código:
   if (str1.length === str2.length){
-    return true
+    return true;
   }
   else{
-    return false
+    return false;
   }
 }
 
@@ -86,10 +86,10 @@ function menosQueNoventa(num) {
   // De lo contrario, devuelve "false"
   // Tu código:
   if (num<90){
-    return true
+    return true;
   }
   else {
-    return false
+    return false;
   }
 }
 
@@ -98,10 +98,10 @@ function mayorQueCincuenta(num) {
   // De lo contrario, devuelve "false"
   // Tu código:
   if (num>50) {
-    return true
+    return true;
   }
   else {
-    return false
+    return false;
   }
 }
 
@@ -116,10 +116,10 @@ function esPar(num) {
   // De lo contrario, devuelve "false"
   // Tu código:
   if (num % 2 === 0){
-    return true
+    return true;
   }
   else{
-    return false
+    return false;
   }
 }
 
@@ -128,10 +128,10 @@ function esImpar(num) {
   // De lo contrario, devuelve "false"
   // Tu código:
   if (num % 2 === 1){
-    return true
+    return true;
   }
   else {
-    return false
+    return false;
   }
 }
 
@@ -178,13 +178,13 @@ function esPositivo(numero) {
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
   if (numero>0){
-    return "Es positivo"
+    return "Es positivo";
   }
   else if(numero<0){
-    return "Es negativo"
+    return "Es negativo";
   }
   else {
-    return false
+    return false;
   }
 }
 function agregarSimboloExclamacion(str) {
@@ -246,10 +246,10 @@ function esVocal(letra){
   if (letra === "a", "e", "i", "o", "u"){
     return "Es vocal"
   } else if (letra.length>1){
-    return "Dato incorrecto"
+    return "Dato incorrecto";
   }
   else {
-    return "Dato incorrecto"
+    return "Dato incorrecto";
   }
 }
 
